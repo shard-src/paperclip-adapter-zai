@@ -1,0 +1,27 @@
+{
+  "name": "@shard-src/paperclip-adapter-zai",
+  "version": "1.0.0",
+  "description": "Z.ai GLM harness adapter for Paperclip — GLM coding-plan models over the Anthropic Messages API via Claude Code",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shard-src/paperclip-adapter-zai.git"
+  },
+  "keywords": ["paperclip", "paperclip-adapter", "zai", "glm", "ai-agents"],
+  "exports": {
+    ".": "./index.js",
+    "./server": "./server/index.js",
+    "./ui": "./ui/index.js",
+    "./ui-parser": "./ui-parser.cjs"
+  },
+  "paperclip": {
+    "adapterUiParser": "1.0.0"
+  },
+  "dependencies": {
+    "@paperclipai/adapter-claude-local": "2026.1106.0"
+  },
+  "engines": {
+    "node": ">=24.11.0"
+  }
+}
